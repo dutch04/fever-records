@@ -5,6 +5,9 @@ header {
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid var(--secondary);
+  position: sticky;
+  z-index: 68;
+  top: 0;
 }
 
 header h1 a {
@@ -48,4 +51,14 @@ header nav a:hover {
 
 header nav a:hover::after {
   width: 100%;
+}
+
+@media (max-width: 480px) {
+  header h1 {
+    display: none;
+  }
+
+  header {
+    justify-content: center;
+  }
 }
