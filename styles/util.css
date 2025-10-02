@@ -10,6 +10,21 @@ header {
   top: 0;
 }
 
+footer {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  position: absolute;
+  z-index: 70;
+  bottom: 0;
+  width: 100%;
+  padding: 1rem;
+  border-top: 1px solid var(--secondary);
+}
+
 header h1 a {
   color: var(--accent);
   font-weight: bold;
@@ -21,19 +36,22 @@ header h1 a:hover {
 }
 
 /* NAV STYLES */
-header nav {
+header nav,
+footer nav {
   display: flex;
   gap: 1.5rem;
 }
 
-header nav a {
+header nav a,
+footer nav a {
   font-size: 1rem;
   transition: color 0.3s ease, border-bottom 0.3s ease;
   padding-bottom: 2px;
   position: relative;
 }
 
-header nav a::after {
+header nav a::after,
+footer nav a::after {
   content: "";
   position: absolute;
   left: 0;
@@ -44,12 +62,14 @@ header nav a::after {
   transition: width 0.2s ease;
 }
 
-header nav a:hover {
+header nav a:hover,
+footer nav a:hover {
   color: var(--accent);
 }
 /* nice shit here, first approach was using border bottom but it is messing with the text */
 
-header nav a:hover::after {
+header nav a:hover::after,
+footer nav a:hover::after {
   width: 100%;
 }
 
