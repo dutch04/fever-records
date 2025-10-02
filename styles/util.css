@@ -1,0 +1,51 @@
+/* HEADER STYLES */
+header {
+  display: flex;
+  padding: 1rem 2rem;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--secondary);
+}
+
+header h1 a {
+  color: var(--accent);
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+/* dang so pretty */
+header h1 a:hover {
+  color: var(--text);
+}
+
+/* NAV STYLES */
+header nav {
+  display: flex;
+  gap: 1.5rem;
+}
+
+header nav a {
+  font-size: 1rem;
+  transition: color 0.3s ease, border-bottom 0.3s ease;
+  padding-bottom: 2px;
+  position: relative;
+}
+
+header nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 1px;
+  background: var(--accent);
+  transition: width 0.2s ease;
+}
+
+header nav a:hover {
+  color: var(--accent);
+}
+/* nice shit here, first approach was using border bottom but it is messing with the text */
+
+header nav a:hover::after {
+  width: 100%;
+}
