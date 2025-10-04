@@ -20,6 +20,12 @@ body {
   position: relative;
   padding-bottom: 8rem;
 }
+
+section {
+  margin: 0 auto;
+  padding: 2rem 2.5rem;
+  max-width: 1280px;
+}
 a {
   color: inherit;
   text-decoration: none;

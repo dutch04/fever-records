@@ -110,6 +110,42 @@ footer nav a:hover::after {
   background: #d3d3d3;
 }
 
+/* CARDS */
+
+.card-container {
+  display: grid;
+  gap: 1rem;
+  /* 1 column on small, 3 on larger screens */
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  align-items: start;
+  margin-top: 1rem;
+  padding: 0;
+}
+
+.card {
+  background: rgb(40, 37, 37);
+  border-radius: 5px;
+  padding: 1.2rem;
+  border: 1px solid white;
+  min-height: 150px;
+  text-align: center;
+}
+
+.card-icon {
+  display: inline-block;
+}
+
+.card-title {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 0.5rem;
+}
+
+.section-title {
+  text-align: center;
+}
+
 @media (max-width: 480px) {
   header h1 {
     display: none;
