@@ -20,7 +20,6 @@ footer {
   gap: 0.5rem;
   position: absolute;
   z-index: 70;
-  bottom: 0;
   width: 100%;
   padding: 1rem;
   border-top: 1px solid var(--secondary);
@@ -91,6 +90,23 @@ footer nav a:hover::after {
 
 .btn:hover {
   filter: brightness(1.2);
+}
+
+.btn-muted {
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 500;
+  text-align: center;
+  padding: 0.5rem 1rem;
+  border: none;
+  background: #e4e4e4;
+  color: #404040;
+  border-radius: 3px;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.btn-muted:hover {
+  background: #d3d3d3;
 }
 
 @media (max-width: 480px) {

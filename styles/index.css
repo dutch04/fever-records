@@ -1,0 +1,44 @@
+.hero {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  background: url(/public/hero-placeholder.jpg);
+  color: white;
+  min-height: 90vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero-content {
+  z-index: 1;
+  width: 100%;
+  text-align: center;
+  padding: 1rem;
+}
+
+.hero-title {
+  font-size: clamp(2rem, 7vw, 6.5rem);
+}
+
+.tagline {
+  font-size: clamp(1rem, 2.5w, 2rem);
+  opacity: 0.8;
+  margin-bottom: 1rem;
+}
+
+.cta-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background: rgba(0, 0, 0, 0.8);
+}
