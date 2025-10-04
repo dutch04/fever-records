@@ -3,189 +3,99 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home</title>
+    <title>Fever Records</title>
     <link rel="stylesheet" href="styles/base.css" />
     <link rel="stylesheet" href="styles/util.css" />
     <link rel="stylesheet" href="styles/index.css" />
   </head>
   <body>
-    <!-- HEADER -->
-    <header>
-      <h1><a href="index.html">LYRA</a></h1>
-      <!-- NAV LINKS -->
-      <nav>
-        <a href="index.html">HOME</a>
-        <a href="products.html">PRODUCTS</a>
-        <a href="about.html">ABOUT</a>
-        <a href="faq.html">FAQ</a>
-      </nav>
-    </header>
-    <main>
-      <!-- HERO SECTION - DONE-->
+      <!-- HEADER -->
+      <header>
+        <h1><a href="index.html">FEVER RECORDS</a></h1>
+        <!-- NAV LINKS -->
+        <nav>
+          <a href="index.html">HOME</a>
+          <a href="about.html">ABOUT</a>
+          <a href="contact.html">CONTACT</a>
+        </nav>
+      </header>
+
+     <main>
+      <!-- HERO SECTION -->
       <section class="hero">
         <div class="hero-content">
-          <h1 class="hero-title">Welcome to LYRA</h1>
+          <h1 class="hero-title">Welcome!</h1>
           <p class="tagline">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio,
-            nemo.?
+            No skips. All hits baby!
           </p>
           <div class="cta-container">
             <!-- goes to products page -->
-            <a class="btn" href="products.html">Shop Now</a>
+            <a class="btn" href="vinyl.html">Shop Vinyls</a>
             <!-- goes to about page -->
-            <a class="btn-muted" href="about.html">Learn More</a>
+            <a class="btn-muted" href="newreleases.html">New Releases</a>
           </div>
         </div>
       </section>
-      <!-- HOW IT WORKS SECTION - ONGOING -->
-      <section class="how-section">
-        <h2 class="section-title">How It Works</h2>
-        <!-- 3 cards -->
-        <div class="steps card-container">
-          <div class="step card">
-            <div class="card-title">
-              <div class="card-icon">
-                <img
-                  src="public/icons/white-cart.svg"
-                  alt="cart icon"
-                  width="28px"
-                />
-              </div>
-              <h3>Browse Products</h3>
-            </div>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit,
-              accusamus.
-            </p>
+
+      <!-- GENRE SECTION -->
+      <section class="genre-section">
+        <h2 class="section-title">Explore by Genre</h2>
+        <div class="card-container">
+          <a href="genre-jazz.html" class="card">
+            <div class="genre-icon">🎷</div>
+            <h3>Jazz</h3>
+            <small>Smooth ass grooves and shit.</small>
+          </a>
+          <a href="genre-rock.html" class="card">
+            <div class="genre-icon">🎸</div>
+            <h3>Rock</h3>
+            <small>Sick ass riffs and shit.</small>
+          </a>
+          <a href="genre-hiphop.html" class="card">
+            <div class="genre-icon">🎤</div>
+            <h3>Hip-Hop</h3>
+            <small>Tight ass beats and shit.</small>
+          </a>
+        </div>
+      </section>
+
+      <!-- RELEASES SECTION -->
+      <section class="release-section">
+        <h2 class="section-title">New Shit This Week</h2>
+        <div class="card-container">
+          <div class="card">
+            <img src="/public/covers/allofme.jpg" alt="Masayoshi Takanaka - All of Me" width="100%">
+            <h3>All of Me</h3>
+            <p><em>Masayoshi Takanaka</em></p>
+            <small>24-Bit/96 kHz Stereo</small>
           </div>
-          <div class="step card">
-            <div class="card-title">
-              <div class="card-icon">
-                <img
-                  src="public/icons/white-cart.svg"
-                  alt="cart icon"
-                  width="28px"
-                />
-              </div>
-              <h3>Browse Products</h3>
-            </div>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit,
-              accusamus.
-            </p>
+          <div class="card">
+            <img src="/public/covers/highlight.jpg" alt="Mass of Fermenting Dregs - Highlight" width="100%">
+            <h3>Highlight</h3>
+            <p><em>Mass of Fermenting Dregs</em></p>
+            <small>24-Bit/96 kHz Stereo</small>
           </div>
-          <div class="step card">
-            <div class="card-title">
-              <div class="card-icon">
-                <img
-                  src="public/icons/white-cart.svg"
-                  alt="cart icon"
-                  width="28px"
-                />
-              </div>
-              <h3>Browse Products</h3>
-            </div>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit,
-              accusamus.
-            </p>
+          <div class="card">
+            <img src="/public/covers/illmatic.jpg" alt="Nas - illmatic" width="100%">
+            <h3>Illmatic</h3>
+            <p><em>Nas</em></p>
+            <small>24-Bit/96 kHz Stereo</small>
           </div>
         </div>
       </section>
-      <!-- REVIEWS SECTION -->
-      <section class="review-section">
-        <!-- hardcoded reviews -->
-        <h2 class="section-title">Reviews</h2>
-        <div class="review-container">
-          <div class="review-card">
-            <blockquote>
-              "this website changed my life. i came here to shop, but now im
-              questioning my whole existence."
-            </blockquote>
-            <p class="reviewer">- Yumi L.</p>
-          </div>
-          <div class="review-card">
-            <blockquote>
-              "this website changed my life. i came here to shop, but now im
-              questioning my whole existence."
-            </blockquote>
-            <p class="reviewer">- Yumi Acm</p>
-          </div>
-          <div class="review-card">
-            <blockquote>
-              "this website changed my life. i came here to shop, but now im
-              questioning my whole existence."
-            </blockquote>
-            <p class="reviewer">- Yumi A.</p>
-          </div>
-        </div>
-      </section>
-      <!-- WHY US SECTION -->
-      <section class="how-section">
-        <h2 class="section-title">Why Me?</h2>
-        <!-- 3 cards -->
-        <div class="steps card-container">
-          <div class="step card">
-            <div class="card-title">
-              <div class="card-icon">
-                <img
-                  src="public/icons/white-cart.svg"
-                  alt="cart icon"
-                  width="28px"
-                />
-              </div>
-              <h3>Browse Products</h3>
-            </div>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit,
-              accusamus.
-            </p>
-          </div>
-          <div class="step card">
-            <div class="card-title">
-              <div class="card-icon">
-                <img
-                  src="public/icons/white-cart.svg"
-                  alt="cart icon"
-                  width="28px"
-                />
-              </div>
-              <h3>Browse Products</h3>
-            </div>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit,
-              accusamus.
-            </p>
-          </div>
-          <div class="step card">
-            <div class="card-title">
-              <div class="card-icon">
-                <img
-                  src="public/icons/white-cart.svg"
-                  alt="cart icon"
-                  width="28px"
-                />
-              </div>
-              <h3>Browse Products</h3>
-            </div>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit,
-              accusamus.
-            </p>
-          </div>
-        </div>
-      </section>
+
     </main>
+
     <!-- FOOTER -->
     <footer>
-      <p>© 2025 TITE. All rights reserved.</p>
+      <p>© 2025 TAE. All rights reserved.</p>
       <nav>
-        <a href="index.html">HOME</a> | <a href="products.html">PRODUCTS</a> |
+        <a href="index.html">HOME</a> | 
         <a href="about.html">ABOUT</a> |
-        <a href="faq.html">FAQ</a>
+        <a href="contact.html">CONTACT</a>
       </nav>
       <p class="disclaimer">
-        Drink ng medyo responsible. This website is just for a machine project
+        Parental Advisory: Explicit Content. This website is just for a machine project
         :>
       </p>
     </footer>
