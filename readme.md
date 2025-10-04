@@ -1,1 +1,1 @@
-sometimes the best cure is alcohol
+lyra - ancient greek instrument
