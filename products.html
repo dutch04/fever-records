@@ -21,33 +21,37 @@
       </nav>
     </header>
     <main>
-      <!-- SEARCH INPUT FOR SMALLER SCREENS, HIDDEN AT LARGE SCREENS-->
+      <!-- SEARCH AND FILTER NAVIGATION -->
       <div class="product-nav">
         <form action="#" class="search-box">
-          <input type="text" class="search-input" placeholder="Search..." />
-          <!-- TODO: REMOVE THIS BUTTON ON SMALLER SCREEN -->
+          <input type="text" class="search-input" placeholder="Search" />
+          <!-- Search Button -->
           <button class="btn search-btn" type="submit">
             <img
               src="public/icons/white-search-icon.svg"
               alt="search icon"
               width="25px"
+              height="25px"
             />
           </button>
-          <button class="btn-dark dialog-filter-btn">
+          <!-- Filter Dialog Button For Small Screens -->
+          <button class="btn dialog-filter-btn" type="button">
             <img
-              src="public/icons/white-dialog.svg"
-              alt="search icon"
+              src="public/icons/filter.svg"
+              alt="filter icon"
               width="25px"
+              height="25px"
             />
           </button>
         </form>
-        <!-- TODO: REMOVE THIS ON SMALL SCREENS AND THEN DISPLAY A DIALOG BUTTON -->
+        <!-- Filter Buttons For Big Screens -->
         <div class="filters">
-          <button class="btn-dark">Genre</button>
-          <button class="btn-dark">Artist</button>
-          <button class="btn-dark">Price Range</button>
+          <button class="btn-dark filter-btn">Genre</button>
+          <button class="btn-dark filter-btn">Artist</button>
+          <button class="btn-dark filter-btn">Pricing</button>
         </div>
       </div>
+
 
       <!-- PRODUCTS SECTION -->
       <section class="products-section">
