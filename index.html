@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <title>Fever Records - Home</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Fever Records</title>
     <link rel="stylesheet" href="styles/base.css" />
     <link rel="stylesheet" href="styles/util.css" />
     <link rel="stylesheet" href="styles/index.css" />
@@ -11,12 +11,13 @@
   <body>
       <!-- HEADER -->
       <header>
-        <h1><a href="index.html">FEVER RECORDS</a></h1>
+        <h1><a href="index.html">FEVER</a></h1>
         <!-- NAV LINKS -->
         <nav>
           <a href="index.html">HOME</a>
+          <a href="products.html">PRODUCTS</a>
           <a href="about.html">ABOUT</a>
-          <a href="contact.html">CONTACT</a>
+          <a href="faq.html">FAQ</a>
         </nav>
       </header>
 
@@ -26,73 +27,254 @@
         <div class="hero-content">
           <h1 class="hero-title">Welcome!</h1>
           <p class="tagline">
-            No skips. All hits baby!
+            We Sell Records. That's It.
           </p>
           <div class="cta-container">
             <!-- goes to products page -->
-            <a class="btn" href="vinyl.html">Shop Vinyls</a>
+            <a class="btn" href="products.html">Shop Now</a>
             <!-- goes to about page -->
-            <a class="btn-muted" href="newreleases.html">New Releases</a>
+            <a class="btn-muted" href="about.html">Learn More</a>
           </div>
         </div>
       </section>
 
-      <!-- GENRE SECTION -->
-      <section class="genre-section">
-        <h2 class="section-title">Explore by Genre</h2>
-        <div class="card-container">
-          <a href="genre-jazz.html" class="card">
-            <div class="genre-icon">🎷</div>
-            <h3>Jazz</h3>
-            <small>Smooth ass grooves and shit.</small>
-          </a>
-          <a href="genre-rock.html" class="card">
-            <div class="genre-icon">🎸</div>
-            <h3>Rock</h3>
-            <small>Sick ass riffs and shit.</small>
-          </a>
-          <a href="genre-hiphop.html" class="card">
-            <div class="genre-icon">🎤</div>
-            <h3>Hip-Hop</h3>
-            <small>Tight ass beats and shit.</small>
-          </a>
+
+      <!-- HOW IT WORKS SECTION - ONGOING -->
+      <section class="how-section">
+        <h2 class="section-title">How It Works</h2>
+        <!-- 3 cards -->
+        <div class="steps card-container">
+          <div class="step card">
+            <div class="card-title">
+              <div class="card-icon">
+                <img
+                  src="public/icons/white-cart.svg"
+                  alt="cart icon"
+                  width="28px"
+                />
+              </div>
+              <h3>Browse Products</h3>
+            </div>
+            <p>
+              Dig through our curated collection of records. No junk, no filler. Just the good stuff.
+            </p>
+          </div>
+          <div class="step card">
+            <div class="card-title">
+              <div class="card-icon">
+                <img
+                  src="public/icons/white-creditcard.svg"
+                  alt="cart icon"
+                  width="28px"
+                />
+              </div>
+              <h3>Fast Checkout</h3>
+            </div>
+            <p>
+              Found something you vibe with? Lock it in. No pop-ups, no upsells, no BS.
+            </p>
+          </div>
+          <div class="step card">
+            <div class="card-title">
+              <div class="card-icon">
+                <img
+                  src="public/icons/white-truck.svg"
+                  alt="cart icon"
+                  width="28px"
+                />
+              </div>
+              <h3>Track Delivery</h3>
+            </div>
+            <p>
+              We pack it right and ship it fast. Straight to your door, ready to drop the needle.
+            </p>
+          </div>
         </div>
       </section>
-
-      <!-- RELEASES SECTION -->
-      <section class="release-section">
-        <h2 class="section-title">New Shit This Week</h2>
-        <div class="card-container">
-          <div class="card">
-            <img src="/public/covers/allofme.jpg" alt="Masayoshi Takanaka - All of Me" width="100%">
-            <h3>All of Me</h3>
-            <p><em>Masayoshi Takanaka</em></p>
-            <small>24-Bit/96 kHz Stereo</small>
+      <!-- REVIEWS SECTION -->
+      <section class="review-section">
+        <!-- hardcoded reviews -->
+        <h2 class="section-title">Reviews</h2>
+        <div class="review-container">
+          <div class="review-card">
+            <blockquote>
+              "this website changed my life. i came here to shop, but now im
+              questioning my whole existence."
+            </blockquote>
+            <p class="reviewer">- Yumi L.</p>
           </div>
-          <div class="card">
-            <img src="/public/covers/highlight.jpg" alt="Mass of Fermenting Dregs - Highlight" width="100%">
-            <h3>Highlight</h3>
-            <p><em>Mass of Fermenting Dregs</em></p>
-            <small>24-Bit/96 kHz Stereo</small>
+          <div class="review-card">
+            <blockquote>
+              bro tried to tax me 8k for a Crunchyroll soundtrack vinyl?? Literally Ohio behavior. 
+              But then they had a Sigma Male Motivation Audiobook on vinyl... that shit was so alpha I had to mew. 
+              Packaging was fire though, no cap, came wrapped in a 'I ❤️ Hot Moms' t-shirt. 4/5 stars, 
+              lost one star because the owner DMed me 'did you pray today?' after I left the review."
+            </blockquote>
+            <p class="reviewer">- Yumi Acm</p>
           </div>
-          <div class="card">
-            <img src="/public/covers/illmatic.jpg" alt="Nas - illmatic" width="100%">
-            <h3>Illmatic</h3>
-            <p><em>Nas</em></p>
-            <small>24-Bit/96 kHz Stereo</small>
+          <div class="review-card">
+            <blockquote>
+              They got that rizzventory! Found me an original pressing of Thug Shaker's greatest hits but the cover 
+              was literally glitching like pibby?? Still copped it tho no cap. 3/5 stars because kuya looked 
+              at me sussy when I answered the door in my Grimace shake pajamas."
+            </blockquote>
+            <p class="reviewer">- Yumi A.</p>
           </div>
         </div>
       </section>
+      <!-- WHY US SECTION -->
+      <section class="how-section">
+        <h2 class="section-title">Why Us?</h2>
+        <!-- 3 cards -->
+        <div class="steps card-container">
+          <div class="step card">
+            <div class="card-title">
+              <div class="card-icon">
+                <img
+                  src="public/icons/block.svg"
+                  alt="cart icon"
+                  width="28px"
+                />
+              </div>
+              <h3>No BS. Just Records.</h3>
+            </div>
+            <p>
+              We cut the noise. No endless ads, no fake exclusives. Just quality music, fairly priced.
+            </p>
+          </div>
+          <div class="step card">
+            <div class="card-title">
+              <div class="card-icon">
+                <img
+                  src="public/icons/hand.svg"
+                  alt="cart icon"
+                  width="28px"
+                />
+              </div>
+              <h3>Handpicked, Not Dumped.</h3>
+            </div>
+            <p>
+              Every record in our store is curated. No bargain-bin garbage, no factory-floor leftovers.
+            </p>
+          </div>
+          <div class="step card">
+            <div class="card-title">
+              <div class="card-icon">
+                <img
+                  src="public/icons/box.svg"
+                  alt="cart icon"
+                  width="28px"
+                />
+              </div>
+              <h3>Fast Shipping. Real Support.</h3>
+            </div>
+            <p>
+              We pack with care, ship quick, and answer when you reach out. Simple as that.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- DISCOVERY SECTION -->
+      <section class="discovery-section">
+        <h2 class="section-title">Discover Your Next Record</h2>
+        <div>
+          <h3 class="new-release-title">Explore Genres</h3>
 
+          <div class="card-container product-card-container">
+            <!-- TODO: Add price in product cards -- DONE  -->
+            <a class="product-card" href="hatdog.html">
+              <img
+                src="public/covers/allofme.jpg"
+                alt="Sample Product"
+              />
+              <div class="product-info">
+                <h3>All of Me</h3>
+                <p class="product-artist">Masayoshi Takanaka</p>
+                <p class="product-price">₱2,399</p>
+                <button class="btn-dark">Add To Cart</button>
+              </div>
+            </a>
+  
+            <a class="product-card" href="hatdog.html">
+              <img
+                src="public/covers/highlight.jpg"
+                alt="Sample Product"
+              />
+              <div class="product-info">
+                <h3>Highlight</h3>
+                <p class="product-artist">Mass of Fermenting Dregs</p>
+                <p class="product-price">₱2,799</p>
+                <button class="btn-dark">Add To Cart</button>
+              </div>
+            </a>
+  
+            <a class="product-card" href="hatdog.html">
+              <img
+                src="public/covers/illmatic.jpg"
+                alt="Sample Product"
+              />
+              <div class="product-info">
+                <h3>Illmatic</h3>
+                <p class="product-artist">Nas</p>
+                <p class="product-price">₱3,099</p>
+                <button class="btn-dark">Add To Cart</button>
+              </div>
+            </a>
+        </div>
+        <div>
+          <h3 class="explore-genres-title">Just Dropped</h3>
+
+          <div class="new-releases card-container product-card-container">
+            <a class="product-card" href="hatdog.html">
+              <img
+                src="public/covers/lessiknowthebetter.jpg"
+                alt="Sample Product"
+              />
+              <div class="product-info">
+                <h3>Currents</h3>
+                <p class="product-artist">Tame Impala</p>
+                <p class="product-price">₱2,499</p>
+                <button class="btn-dark">Add To Cart</button>
+              </div>
+            </a>
+            <a class="product-card" href="hatdog.html">
+              <img
+                src="public/covers/hotrats.jpg"
+                alt="Sample Product"
+              />
+              <div class="product-info">
+                <h3>Hot Rats</h3>
+                <p class="product-artist">Frank Zappa</p>
+                <p class="product-price">₱3,499</p>
+                <button class="btn-dark">Add To Cart</button>
+              </div>
+            </a>
+  
+            <a class="product-card" href="hatdog.html">
+              <img
+                src="public/covers/abbeyroad.jpg"
+                alt="Sample Product"
+              />
+              <div class="product-info">
+                <h3>Abbey Road</h3>
+                <p class="product-artist">The Beatles</p>
+                <p class="product-price">₱3,999</p>
+                <button class="btn-dark">Add To Cart</button>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
     </main>
+
 
     <!-- FOOTER -->
     <footer>
-      <p>© 2025 TAE. All rights reserved.</p>
+      <p>© 2025 Fever Records. All rights reserved.</p>
       <nav>
-        <a href="index.html">HOME</a> | 
+        <a href="index.html">HOME</a> | <a href="products.html">PRODUCTS</a> |
         <a href="about.html">ABOUT</a> |
-        <a href="contact.html">CONTACT</a>
+        <a href="faq.html">FAQ</a>
       </nav>
       <p class="disclaimer">
         Parental Advisory: Explicit Content. This website is just for a machine project

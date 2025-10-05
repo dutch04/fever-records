@@ -3,15 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home</title>
+    <title>Fever Records - Products</title>
     <link rel="stylesheet" href="styles/base.css" />
     <link rel="stylesheet" href="styles/util.css" />
-    <link rel="stylesheet" href="styles/index.css" />
+    <link rel="stylesheet" href="styles/products.css" />
   </head>
   <body>
     <!-- HEADER -->
     <header>
-      <h1><a href="index.html">TITE</a></h1>
+      <h1><a href="index.html">FEVER</a></h1>
       <!-- NAV LINKS -->
       <nav>
         <a href="index.html">HOME</a>
@@ -22,43 +22,205 @@
     </header>
     <main>
       <!-- SEARCH INPUT FOR SMALLER SCREENS, HIDDEN AT LARGE SCREENS-->
-      <div>
-        <form action="#">
-          <input type="text" />
-          <button>search</button>
+      <div class="product-nav">
+        <form action="#" class="search-box">
+          <input type="text" class="search-input" placeholder="Search..." />
+          <!-- TODO: REMOVE THIS BUTTON ON SMALLER SCREEN -->
+          <button class="btn search-btn" type="submit">
+            <img
+              src="public/icons/white-search-icon.svg"
+              alt="search icon"
+              width="25px"
+            />
+          </button>
+          <button class="btn-dark dialog-filter-btn">
+            <img
+              src="public/icons/white-dialog.svg"
+              alt="search icon"
+              width="25px"
+            />
+          </button>
         </form>
-      </div>
-      <!-- CONTAINER FOR THE SIDEBAR AND PRODUCTS SECTION -->
-      <div>
-        <!-- SIDEBAR FOR LARGE SCREEN ONLY, REMOVE AT SMALLER SCREENS -->
-        <div>
-          <div>
-            <form action="#">
-              <input type="text" />
-              <button>search</button>
-            </form>
-          </div>
-          <!-- FILTERS -->
-          <div></div>
-        </div>
-        <!-- PRODUCTS SECTION -->
-        <div>
-          <section></section>
-          <!-- PAGINATION - NOT FUNCTIONAL AT ALL SO SAD -->
-          <div></div>
+        <!-- TODO: REMOVE THIS ON SMALL SCREENS AND THEN DISPLAY A DIALOG BUTTON -->
+        <div class="filters">
+          <button class="btn-dark">Genre</button>
+          <button class="btn-dark">Artist</button>
+          <button class="btn-dark">Price Range</button>
         </div>
       </div>
+
+      <!-- PRODUCTS SECTION -->
+      <section class="products-section">
+        <div class="card-container product-card-container">
+          <!-- TODO: Add price in product cards -- DONE  -->
+          <a class="product-card" href="hatdog.html">
+            <img
+              src="public/covers/allofme.jpg"
+              alt="Sample Product"
+            />
+            <div class="product-info">
+              <h3>All of Me</h3>
+              <p class="product-artist">Masayoshi Takanaka</p>
+              <p class="product-price">₱2,399</p>
+              <button class="btn-dark">Add To Cart</button>
+            </div>
+          </a>
+
+          <a class="product-card" href="hatdog.html">
+            <img
+              src="public/covers/highlight.jpg"
+              alt="Sample Product"
+            />
+            <div class="product-info">
+              <h3>Highlight</h3>
+              <p class="product-artist">Mass of Fermenting Dregs</p>
+              <p class="product-price">₱2,799</p>
+              <button class="btn-dark">Add To Cart</button>
+            </div>
+          </a>
+
+          <a class="product-card" href="hatdog.html">
+            <img
+              src="public/covers/illmatic.jpg"
+              alt="Sample Product"
+            />
+            <div class="product-info">
+              <h3>Illmatic</h3>
+              <p class="product-artist">Nas</p>
+              <p class="product-price">₱3,099</p>
+              <button class="btn-dark">Add To Cart</button>
+            </div>
+          </a>
+
+          <a class="product-card" href="hatdog.html">
+            <img
+              src="public/covers/moon.jpg"
+              alt="Sample Product"
+            />
+            <div class="product-info">
+              <h3>M.O.O.N. EP</h3>
+              <p class="product-artist">M.O.O.N.</p>
+              <p class="product-price">₱2,099</p>
+              <button class="btn-dark">Add To Cart</button>
+            </div>
+          </a>
+
+          <a class="product-card" href="hatdog.html">
+            <img
+              src="public/covers/aroundthefur.jpg"
+              alt="Sample Product"
+            />
+            <div class="product-info">
+              <h3>Around the Fur</h3>
+              <p class="product-artist">Deftones</p>
+              <p class="product-price">₱3,299</p>
+              <button class="btn-dark">Add To Cart</button>
+            </div>
+          </a>
+
+          <a class="product-card" href="hatdog.html">
+            <img
+              src="public/covers/lessiknowthebetter.jpg"
+              alt="Sample Product"
+            />
+            <div class="product-info">
+              <h3>Currents</h3>
+              <p class="product-artist">Tame Impala</p>
+              <p class="product-price">₱2,499</p>
+              <button class="btn-dark">Add To Cart</button>
+            </div>
+          </a>
+          <a class="product-card" href="hatdog.html">
+            <img
+              src="public/covers/hotrats.jpg"
+              alt="Sample Product"
+            />
+            <div class="product-info">
+              <h3>Hot Rats</h3>
+              <p class="product-artist">Frank Zappa</p>
+              <p class="product-price">₱3,499</p>
+              <button class="btn-dark">Add To Cart</button>
+            </div>
+          </a>
+
+          <a class="product-card" href="hatdog.html">
+            <img
+              src="public/covers/abbeyroad.jpg"
+              alt="Sample Product"
+            />
+            <div class="product-info">
+              <h3>Abbey Road</h3>
+              <p class="product-artist">The Beatles</p>
+              <p class="product-price">₱3,999</p>
+              <button class="btn-dark">Add To Cart</button>
+            </div>
+          </a>
+
+          <a class="product-card" href="hatdog.html">
+            <img
+              src="public/covers/2014.jpg"
+              alt="Sample Product"
+            />
+            <div class="product-info">
+              <h3>2014 Forest Hills Drive</h3>
+              <p class="product-artist">J. Cole</p>
+              <p class="product-price">₱2,999</p>
+              <button class="btn-dark">Add To Cart</button>
+            </div>
+          </a>
+
+          <a class="product-card" href="hatdog.html">
+            <img
+              src="public/covers/discovery.jpg"
+              alt="Sample Product"
+            />
+            <div class="product-info">
+              <h3>Discovery</h3>
+              <p class="product-artist">Daft Punk</p>
+              <p class="product-price">₱2,499</p>
+              <button class="btn-dark">Add To Cart</button>
+            </div>
+          </a>
+
+          <a class="product-card" href="hatdog.html">
+            <img
+              src="public/covers/abbeyroad.jpg"
+              alt="Sample Product"
+            />
+            <div class="product-info">
+              <h3>Abbey Road</h3>
+              <p class="product-artist">The Beatles</p>
+              <p class="product-price">₱3,999</p>
+              <button class="btn-dark">Add To Cart</button>
+            </div>
+          </a>
+
+          <a class="product-card" href="hatdog.html">
+            <img
+              src="public/covers/purrr.jpg"
+              alt="Sample Product"
+            />
+            <div class="product-info">
+              <h3>Purrr!</h3>
+              <p class="product-artist">Doja Cat</p>
+              <p class="product-price">₱2,399</p>
+              <button class="btn-dark">Add To Cart</button>
+            </div>
+          </a>
+          
+        </div>
+      </section>
     </main>
     <!-- FOOTER -->
     <footer>
-      <p>© 2025 TITE. All rights reserved.</p>
+      <p>© 2025 Fever Records. All rights reserved.</p>
       <nav>
         <a href="index.html">HOME</a> | <a href="products.html">PRODUCTS</a> |
         <a href="about.html">ABOUT</a> |
         <a href="faq.html">FAQ</a>
       </nav>
       <p class="disclaimer">
-        Drink ng medyo responsible. This website is just for a machine project
+        Parental Advisory: Explicit Content. This website is just for a machine project
         :>
       </p>
     </footer>

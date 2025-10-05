@@ -5,7 +5,7 @@ header {
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid var(--secondary);
-  background: var(--mute);
+  background: rgb(40, 37, 37);
   position: sticky;
   z-index: 68;
   top: 0;
@@ -84,7 +84,7 @@ footer nav a:hover::after {
   padding: 0.5rem 1rem;
   border: none;
   background: var(--accent);
-  color: var(--bg);
+  color: white;
   border-radius: 3px;
   transition: background 0.3s ease, color 0.3 ease;
 }
@@ -110,6 +110,24 @@ footer nav a:hover::after {
   background: #d3d3d3;
 }
 
+.btn-dark {
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 600;
+  text-align: center;
+  padding: 0.5rem 1rem;
+  border: 1px solid white;
+  background: black;
+  color: #fff;
+  border-radius: 4px;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.btn-dark:hover {
+  background: #1a1a1a;
+  transform: translateY(-2px);
+}
+
 /* CARDS */
 
 .card-container {
@@ -123,7 +141,7 @@ footer nav a:hover::after {
 }
 
 .card {
-  background: rgb(40, 37, 37);
+  background: rgb(20, 19, 19);
   border-radius: 5px;
   padding: 1.2rem;
   border: 1px solid white;
@@ -146,6 +164,41 @@ footer nav a:hover::after {
   text-align: center;
 }
 
+.new-releases,
+.explore-genres {
+  padding: 0 3rem;
+}
+
+.product-card {
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  position: relative;
+  transition: transform 0.3s ease;
+  background: #1a1a1a;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  cursor: pointer;
+}
+
+.product-card img {
+  width: 100%;
+}
+
+.product-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.75);
+  width: 100%;
+  padding: 0.5rem 1rem 1rem 1rem;
+}
+
+.product-info h3 {
+  margin-bottom: 0.25rem;
+}
 @media (max-width: 480px) {
   header h1 {
     display: none;

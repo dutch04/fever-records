@@ -1,0 +1,115 @@
+.hero {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    background: url("../public/feverlogo2.jpg");
+    color: white;
+    min-height: 40vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .hero-content {
+    z-index: 1;
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
+  }
+  
+  .hero-title {
+    font-size: clamp(2rem, 5vw, 3.5rem);
+  }
+  
+  
+  .hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    background: rgba(0, 0, 0, 0.8);
+  }
+
+/* How Section */
+.how-section {
+    background: rgb(40, 37, 37);
+}
+
+/* Why Section */
+.why-section {
+    background: black;
+}
+
+.section-title {
+    text-align: center;
+    color: white; 
+}
+
+
+.steps.card-container {
+    align-items: stretch;
+}
+
+.review-container {
+    align-items: stretch;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    margin-top: 1rem;
+}
+
+
+.why-section .step.card {
+    background: rgb(30, 28, 28);
+    border-radius: 6px;
+    padding: 1rem 1.2rem;
+    border: 1px solid var(--secondary);
+    min-height: 120px;
+    text-align: center;
+    flex-direction: column;
+    justify-content: space-between;
+    display: flex;
+}
+
+
+
+.card-title {
+    flex-shrink: 0; 
+    margin-bottom: 0.5rem; 
+    color: var(--accent);
+}
+
+.card-title h3 {
+    margin: 0;
+    font-weight: 600;
+}
+
+/* Answers */
+.how-section .step.card p,
+.why-section .step.card p { 
+    margin: 0;
+    line-height: 1.5;
+    flex-grow: 1;
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+    .hero-title {
+        font-size: clamp(2rem, 8vw, 3rem);
+    }
+
+    .tagline {
+        font-size: clamp(0.9rem, 6vw, 1.5rem);
+    }
+
+    .section-title {
+        font-size: 1.8rem;
+    }
+
+    .how-section .step.card,
+    .why-section .step.card { 
+        padding: 0.8rem;  
+    }
+}
